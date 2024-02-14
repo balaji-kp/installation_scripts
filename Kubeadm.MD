@@ -135,6 +135,9 @@ Enable kubelet service.
 ```
 sudo systemctl enable kubelet
 ```
+sudo rm /etc/containerd/config.toml
+sudo systemctl restart containerd
+sudo kubeadm init
 
 Initialize kubeadm 
 ```
